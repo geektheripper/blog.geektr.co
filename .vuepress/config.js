@@ -4,5 +4,9 @@ module.exports = {
     head: [
         ['link', { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
         ['link', { rel: 'icon', type: 'image/png', href: '/favicon.png' }]
+    ],
+    evergreen: true,
+    extraWatchFiles: [
+        '.vuepress/theme/*',
     ]
 }

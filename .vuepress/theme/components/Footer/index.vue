@@ -1,0 +1,109 @@
+<template>
+  <footer>
+    <div class="footer-internal">
+      <img class="avatar" src="./geektr-rotate.svg" alt="@GeekTR" />
+      <section>
+        <p class="description">
+          <a target="_blank" href="https://twitter.com/geektheripper">@GeekTR</a>
+          <span>
+            //志在互联网，所好者繁，染拖延之疾，久治未愈，
+            <span title="现在没有了，嘘~">有乔翁之心</span>，奈何命定庸人。
+          </span>
+        </p>
+        <Badge
+          href="https://github.com/geektheripper"
+          label="GitHub"
+          message="@geektheripper"
+          color="2a88f6"
+          logo="github"
+        />
+        <Badge
+          href="https://git.geektr.co/geektr"
+          label="GitLab"
+          message="@geektr"
+          color="fc6d26"
+          logo="gitlab"
+        />
+        <Badge
+          href="https://twitter.com/geektheripper"
+          label="Twitter"
+          message="@geektheripper"
+          color="1da1f2"
+          logo="twitter"
+        />
+        <Badge
+          href="https://space.bilibili.com/3162440/dynamic"
+          label="GitLab"
+          message="@GeekTR"
+          color="f45a8d"
+          :logo="badges.bilibili"
+        />
+        <Badge
+          href="tencent://message/?uin=598957591"
+          label="QQ"
+          message="@598957591"
+          color="1da1f2"
+          logo="tencent-qq"
+        />
+        <Badge
+          href="mailto:geektr@ch-postal.com?subject=%5BFrom%20Blog%5D%20Your%20Subject"
+          label="Mail"
+          message="geektr@ch-postal.com"
+          color="violet"
+          :logo="badges.chPostal"
+        />
+      </section>
+    </div>
+  </footer>
+</template>
+
+<script>
+import Badge from "./badges";
+import bilibiliBrandSvg from "!raw-loader!./badges/bilibili.svg";
+import chPostalBrandSvg from "!raw-loader!./badges/ch-postal.svg";
+
+export default {
+  components: { Badge },
+  computed: {
+    badges() {
+      return {
+        bilibili: "data:image/svg+xml;base64," + btoa(bilibiliBrandSvg),
+        chPostal: "data:image/svg+xml;base64," + btoa(chPostalBrandSvg)
+      };
+    }
+  }
+};
+</script>
+
+<style lang="stylus" scoped>
+footer
+  background-color #333
+
+  .footer-internal
+    min-height 5rem
+    margin 0 auto
+    max-width 960px
+    padding 2rem 5rem
+    display flex
+
+  .avatar
+    left 2rem
+    width 5rem
+    height 5rem
+
+  section
+    padding 0 1rem
+    color white
+
+    .description
+      margin-block-end 0.5rem
+
+    p
+      margin-block-start 0
+      margin-block-end 0
+
+@media (max-width: $MQMobile)
+  footer
+    .footer-internal
+      padding 2rem
+</style>
