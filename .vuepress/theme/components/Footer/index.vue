@@ -2,14 +2,13 @@
   <footer>
     <div class="footer-internal">
       <img class="avatar" src="./geektr-rotate.svg" alt="@GeekTR" />
-      <section>
-        <p class="description">
-          <a target="_blank" href="https://twitter.com/geektheripper">@GeekTR</a>
-          <span>
-            //志在互联网，所好者繁，染拖延之疾，久治未愈，
-            <span title="现在没有了，嘘~">有乔翁之心</span>，奈何命定庸人。
-          </span>
+      <section class="description">
+        <p>
+          @GeekTR //志在互联网，所好者繁，染拖延之疾，久治未愈，
+          <span title="现在没有了，嘘~">有乔翁之心</span>，奈何命定庸人。
         </p>
+      </section>
+      <section class="badges">
         <Badge
           href="https://github.com/geektheripper"
           label="GitHub"
@@ -79,31 +78,33 @@ export default {
 footer
   background-color #333
 
-  .footer-internal
-    min-height 5rem
-    margin 0 auto
-    max-width 960px
-    padding 2rem 5rem
-    display flex
+.footer-internal
+  min-height 5rem
+  margin 0 auto
+  max-width $textAreaWidth
+  padding 2rem 5rem
+  display flex
+  flex-wrap wrap
 
-  .avatar
-    left 2rem
-    width 5rem
-    height 5rem
+.avatar
+  width 5rem
+  height 5rem
+  margin-right 1rem
 
-  section
-    padding 0 1rem
-    color white
+.description
+  flex 1
+  min-width 150px
+  margin-right 1rem
+  color white
 
-    .description
-      margin-block-end 0.5rem
+  p
+    margin-block-start 0
+    margin-block-end 0.5rem
 
-    p
-      margin-block-start 0
-      margin-block-end 0
+.badges>*
+  display block
 
 @media (max-width: $MQMobile)
-  footer
-    .footer-internal
-      padding 2rem
+  .footer-internal
+    padding 2rem
 </style>

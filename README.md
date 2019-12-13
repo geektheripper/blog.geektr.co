@@ -1,5 +1,5 @@
 ---
-home: true
+layout: Home
 dailyWife:
  -
     image: img/daily-wife/0.jpg
@@ -9,7 +9,7 @@ dailyWife:
         avatar: img/daily-wife/bison.jpg
 ---
 
-::: slot header
+::: slot header-image-text
 # Title
 subtitle
 :::
