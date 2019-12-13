@@ -13,5 +13,8 @@
     "@vuepress/plugin-blog": "^1.5.2",
     "raw-loader": "^4.0.0",
     "vuepress": "^1.2.0"
+  },
+  "resolutions": {
+    "**/**/serialize-javascript": "^2.1.1"
   }
 }
