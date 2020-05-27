@@ -1,5 +1,6 @@
 ---
 title: 1Password Commands
+subtitle: use 1password cli in shell environment as credential provider
 date: 2019-10-28 13:05:15
 tags:
     - shell-logs
@@ -20,7 +21,7 @@ sudo mv op /usr/local/bin/
 op signin my geektheripper@gmail.com
 ```
 
-<!--more-->
+<!-- more -->
 
 ## Usage
 

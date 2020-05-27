@@ -20,7 +20,7 @@ function quick-acme {
     acme.sh --issue --dns dns_ali -d "$domain" -d "*.$domain"
 }
 ```
-<!--more-->
+<!-- more -->
 ## Usage
 
 ```bash

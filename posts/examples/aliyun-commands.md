@@ -25,4 +25,4 @@ dd if=chr.img bs=1024 of=/dev/vda && \
 reboot
 ```
 
-<!--more-->
+<!-- more -->

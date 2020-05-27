@@ -19,7 +19,7 @@ function init_govc {
     # export GOVC_INSECURE=1
 }
 ```
-<!--more-->
+<!-- more -->
 ## Usage
 
 ### VM About

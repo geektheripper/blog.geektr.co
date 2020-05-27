@@ -24,7 +24,7 @@ function kong-id {
     kong $@ | jq -r ".id"
 }
 ```
-<!--more-->
+<!-- more -->
 ## Usage
 
 ### Consumers

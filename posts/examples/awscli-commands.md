@@ -34,7 +34,7 @@ function init-ssh {
     ssh-add "$HOME/.ssh/$1"
 }
 ```
-<!--more-->
+<!-- more -->
 
 ## Usage
 
