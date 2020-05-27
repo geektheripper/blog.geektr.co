@@ -57,12 +57,12 @@
 </template>
 
 <script>
+import { Base64 } from "js-base64";
 import Badge from "./badges";
 import bilibiliBrandSvg from "!raw-loader!./badges/bilibili.svg";
 import chPostalBrandSvg from "!raw-loader!./badges/ch-postal.svg";
 
-const base64Svg = t =>
-  "data:image/svg+xml;base64," + Buffer.from(t).toString("base64");
+const base64Svg = t => "data:image/svg+xml;base64," + Base64.encode(t);
 
 export default {
   components: { Badge },
