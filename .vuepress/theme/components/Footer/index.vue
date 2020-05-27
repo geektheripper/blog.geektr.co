@@ -61,13 +61,16 @@ import Badge from "./badges";
 import bilibiliBrandSvg from "!raw-loader!./badges/bilibili.svg";
 import chPostalBrandSvg from "!raw-loader!./badges/ch-postal.svg";
 
+const base64Svg = t =>
+  "data:image/svg+xml;base64," + Buffer.from(t).toString("base64");
+
 export default {
   components: { Badge },
   computed: {
     badges() {
       return {
-        bilibili: "data:image/svg+xml;base64," + btoa(bilibiliBrandSvg),
-        chPostal: "data:image/svg+xml;base64," + btoa(chPostalBrandSvg)
+        bilibili: base64Svg(bilibiliBrandSvg),
+        chPostal: base64Svg(chPostalBrandSvg)
       };
     }
   }
