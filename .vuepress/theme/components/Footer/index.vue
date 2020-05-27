@@ -32,7 +32,7 @@
         />
         <Badge
           href="https://space.bilibili.com/3162440/dynamic"
-          label="GitLab"
+          label="Bilibili"
           message="@GeekTR"
           color="f45a8d"
           :logo="badges.bilibili"
