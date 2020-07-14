@@ -60,7 +60,7 @@ PPS：请谨慎选择租房中介，参考DIYgod的遭遇：[早上还在睡觉�
 
 另一种方案是使用PON Stick，能直接去掉光猫，节省大量设备空间和排插孔：
 
-![PON Sticks](ponsticks.jpg)
+![PON Sticks](./ponsticks.jpg)
 
 如果 PON Stick，你可能需要这些信息（北京联通光纤）：
 
