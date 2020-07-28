@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://blog.geektr.co",
   "scripts": {
     "dev": "vuepress dev",
     "build": "vuepress build"
@@ -10,12 +11,10 @@
   "author": "GeekTR <geektheripper@gmail.com>",
   "license": "ISC",
   "devDependencies": {
-    "@vuepress/plugin-blog": "^1.5.2",
-    "js-base64": "^2.5.2",
-    "raw-loader": "^4.0.0",
-    "vuepress": "^1.2.0"
-  },
-  "resolutions": {
-    "**/**/serialize-javascript": "^2.1.1"
+    "@vuepress/plugin-blog": "^1.9.2",
+    "js-base64": "^3.3.2",
+    "raw-loader": "^4.0.1",
+    "vuepress": "^1.5.2",
+    "vuepress-plugin-sitemap": "^2.3.1"
   }
 }
