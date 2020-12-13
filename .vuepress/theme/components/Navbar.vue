@@ -35,7 +35,7 @@ import NavLinks from "@theme/components/NavLinks.vue";
 import SidebarButton from '@theme/components/SidebarButton.vue';
 
 const MyWives =
-  "Miku,Tomoyo,Faye,Asuka,Megumi,Yuki,Alicia,Kurisu,Kyou,Chihaya,Chidori,Konata,Ami,Rena";
+  "Miku,Tomoyo,Faye,Asuka,Megumi,Yuki,Alicia,Kurisu,Kyou,Chihaya,Chidori,Konata,Ami,Rena,Tsukasa";
 
 function css(el, property) {
   // NOTE: Known bug, will return 'auto' if style value is 'auto'
