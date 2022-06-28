@@ -10,7 +10,7 @@ module.exports = {
   extraWatchFiles: [".vuepress/theme/*"],
   plugins: {
     sitemap: {
-      hostname: require("../package.json").homepage,
+      hostname: require("../../package.json").homepage,
       exclude: ["/404.html"]
     },
     "@vuepress/blog": {

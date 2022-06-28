@@ -51,7 +51,7 @@ header
   box-sizing border-box
   width 100%
   bottom 0
-  background-image linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6))
+  background-image linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5))
   color white
 
   .description

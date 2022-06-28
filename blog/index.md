@@ -10,8 +10,9 @@ dailyWife:
 ---
 
 ::: slot header-image-text
-# Title
-subtitle
+
+Are you going to Scarborough Fair?
+
 :::
 
-home page
+<!-- home page -->

@@ -1,0 +1,58 @@
+# src
+.dist: &src.dist
+  pattern: blog/.vuepress/dist/**/*
+  strip: blog/.vuepress/dist/
+
+# dists
+.blogSite: &dist.blogSite
+  type: "@oss"
+  bucket: co-geektr-blog
+  region: oss-cn-shanghai
+  accessKeyId: $Ali_Key
+  accessKeySecret: $Ali_Secret
+
+# rules
+# make all files public read
+.public: &rule.public
+  pattern: "**/*"
+  acl: public-read
+
+# apply mime type for all files
+.mime: &rule.mime
+  pattern: "**/*"
+  autoMimeType: true
+
+environments:
+  default:
+    - source: *src.dist
+      dist: *dist.blogSite
+      rules:
+        - *rule.public
+        - *rule.mime
+        - pattern: "**/*"
+          headers:
+            "Cache-Control": public, max-age=3600
+
+        - pattern: "*"
+          headers:
+            "Cache-Control": public, max-age=60
+
+        - pattern: "**/*.html"
+          headers:
+            "Cache-Control": public, max-age=60
+
+        - pattern: "precache*.js"
+          headers:
+            "Cache-Control": public, max-age=31536000
+
+        - pattern: "assets/img/**/*"
+          headers:
+            "Cache-Control": public, max-age=31536000
+
+        - pattern: "assets/css/**/*"
+          headers:
+            "Cache-Control": public, max-age=31536000
+
+        - pattern: "assets/js/**/*"
+          headers:
+            "Cache-Control": public, max-age=31536000

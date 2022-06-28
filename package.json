@@ -5,16 +5,18 @@
   "main": "index.js",
   "homepage": "https://blog.geektr.co",
   "scripts": {
-    "dev": "vuepress dev",
-    "build": "vuepress build"
+    "dev": "vuepress dev blog",
+    "build": "vuepress build blog",
+    "post": "npm run build && super-cp"
   },
   "author": "GeekTR <geektheripper@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "@vuepress/plugin-blog": "^1.9.4",
-    "js-base64": "^3.6.1",
+    "js-base64": "^3.7.2",
     "raw-loader": "^4.0.2",
-    "vuepress": "^1.8.2",
+    "super-cp": "^0.2.0",
+    "vuepress": "^1.9.7",
     "vuepress-plugin-sitemap": "^2.3.1"
   }
 }
